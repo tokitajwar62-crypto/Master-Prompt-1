@@ -1,0 +1,128 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#101827">
+<meta name="description" content="A mobile-friendly Google Veo 3 master prompt for creating hyper-realistic 3D optical illusion art videos with one consistent male artist.">
+<title>Veo 3 — 3D Illusion Art Master Prompt</title>
+<style>
+  :root{color-scheme:dark;--bg:#0b1020;--panel:#121a2e;--panel2:#18233b;--text:#f4f7ff;--muted:#b8c3d9;--accent:#74f0c0;--accent2:#9cc5ff;--line:#2b3855}
+  *{box-sizing:border-box}
+  body{margin:0;background:radial-gradient(ellipse at top,#1b2b4b 0%,var(--bg) 55%);color:var(--text);font:16px/1.6 system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif}
+  main{width:min(900px,100%);margin:0 auto;padding:24px 16px 44px}
+  .eyebrow{display:inline-block;color:var(--accent);font-size:.78rem;font-weight:800;letter-spacing:.12em;text-transform:uppercase}
+  h1{font-size:clamp(2rem,7vw,3.5rem);line-height:1.08;letter-spacing:-.04em;margin:12px 0}
+  .intro{color:var(--muted);max-width:680px;margin:0 0 22px}
+  .top-card,.prompt-card{background:linear-gradient(160deg,rgba(24,35,59,.98),rgba(15,23,41,.98));border:1px solid var(--line);border-radius:20px;padding:20px;box-shadow:0 18px 45px #0003}
+  .top-card{margin-bottom:16px}
+  .meta{display:flex;flex-wrap:wrap;gap:8px;margin:14px 0 0}
+  .pill{border:1px solid #3b4d6e;border-radius:999px;padding:5px 10px;color:#dce7fb;font-size:.8rem}
+  .actions{display:flex;gap:10px;flex-wrap:wrap;margin-top:18px}
+  button{appearance:none;border:0;border-radius:12px;padding:13px 17px;font:inherit;font-weight:800;cursor:pointer;min-height:48px}
+  #copyBtn{background:var(--accent);color:#071a18;flex:1 1 220px}
+  #selectBtn{background:#263653;color:var(--text);border:1px solid #405477;flex:1 1 160px}
+  button:focus-visible{outline:3px solid white;outline-offset:3px}
+  #status{min-height:1.5em;color:var(--accent);font-size:.9rem;margin-top:8px}
+  h2{font-size:1.2rem;margin:0 0 10px}
+  .small{color:var(--muted);font-size:.9rem}
+  textarea{display:block;width:100%;min-height:70vh;resize:vertical;border:1px solid var(--line);border-radius:14px;background:#080d18;color:#eaf0ff;padding:16px;font:14px/1.65 ui-monospace,SFMono-Regular,Consolas,monospace;white-space:pre;tab-size:2}
+  footer{color:var(--muted);font-size:.82rem;text-align:center;padding:24px 4px 0}
+  @media(min-width:700px){main{padding-top:40px}.top-card,.prompt-card{padding:26px}textarea{min-height:640px}}
+</style>
+</head>
+<body>
+<main>
+  <span class="eyebrow">Google Veo 3 · Creator Toolkit</span>
+  <h1>3D Illusion Art<br>Master Prompt</h1>
+  <p class="intro">Generate fresh, hyper-realistic street-art illusion concepts and turn one selected idea into a cinematic 10-second video prompt. Built to be easy to use on mobile.</p>
+
+  <section class="top-card" aria-label="Prompt actions">
+    <h2>Copy the full prompt</h2>
+    <p class="small">Tap the green button to copy everything, then paste it into ChatGPT or your preferred AI assistant.</p>
+    <div class="meta"><span class="pill">Male artist only</span><span class="pill">10 fresh ideas</span><span class="pill">Vertical 9:16</span><span class="pill">10-second video</span></div>
+    <div class="actions">
+      <button id="copyBtn" type="button">📋 Copy Master Prompt</button>
+      <button id="selectBtn" type="button">Select Prompt Text</button>
+    </div>
+    <div id="status" role="status" aria-live="polite"></div>
+  </section>
+
+  <section class="prompt-card">
+    <h2>Master Prompt</h2>
+    <p class="small">You can also select and copy the text manually below.</p>
+    <textarea id="promptText" spellcheck="false" aria-label="Full 3D illusion art master prompt" readonly>MASTER PROMPT: VIRAL 3D ILLUSION ART VIDEO ENGINEER — GOOGLE VEO 3
+
+YOUR ROLE
+Act as an expert Google Veo 3 prompt engineer specializing in hyper-realistic, viral-style 3D street, floor, and wall illusion art videos. A male artist physically creates the illusion by drawing and painting it in the real world.
+
+TASK — FOLLOW THIS ORDER
+1. First, generate exactly 10 fresh, visually distinct 3D optical-illusion video ideas. Do not write the full video prompts yet.
+2. Make every idea dramatic, instantly understandable, visually surprising, and suitable for a short vertical video. Avoid repeating the same concept with small changes.
+3. After listing the 10 ideas, ask me to choose one by number.
+4. Only after I choose an idea, write one detailed, ready-to-use Google Veo 3 video prompt for that idea.
+
+LOCKED ARTIST — MUST NEVER CHANGE
+- Show one adult male artist only. Never use a female artist or women as the artist.
+- Keep the same artist throughout the entire video: young adult man with an athletic/average build, wearing a fitted dark grey-blue T-shirt, dark joggers, and clean white sneakers.
+- His face, hairstyle, body, clothing, and shoes remain consistent in every phase.
+- He must physically create the artwork with his hands and real art tools. Do not make the artwork magically appear.
+
+LOCKED VISUAL STYLE
+- Hyper-realistic, cinematic, premium-quality 3D street-art illusion.
+- Vertical 9:16 composition, exactly 10 seconds total.
+- Real outdoor pavement, street, wall, or floor with believable surface texture and natural daylight.
+- Fixed, stable camera at a carefully chosen perspective that makes the final anamorphic illusion work from the camera angle.
+- Show believable paint, chalk, brushes, shading, highlights, perspective lines, and depth cues.
+- Realistic body movement, hand contact, shadows, and interaction with the surface.
+- Fast but readable time-lapse progression; no jump cuts that change the artist, location, camera angle, or artwork layout.
+- The finished illusion must look like a breathtaking three-dimensional scene opening out of a flat surface, while remaining clearly painted artwork.
+- No captions, subtitles, logos, watermarks, extra artists, or unrelated people blocking the artwork.
+
+WHEN WRITING THE SELECTED VIDEO PROMPT
+Write one cohesive, production-ready prompt for Google Veo 3. Include the environment, composition, artist continuity, materials, lighting, camera angle, physical painting actions, and final visual reveal. Keep the illusion aligned to the camera perspective so it reads as 3D from the intended viewpoint.
+
+EXACT 10-SECOND ACTION TIMELINE
+Phase 1 — Outline (0.0–1.5 seconds): The male artist kneels or crouches and quickly draws the illusion's main perspective outline on the pavement using chalk or paint. The camera stays fixed.
+Phase 2 — Monochrome Depth (1.5–3.5 seconds): He adds base colors, dark shadows, and perspective shading to establish convincing depth. His hands and tools visibly touch the surface.
+Phase 3 — Vibrant Details (3.5–7.5 seconds): He rapidly adds rich colors, fine textures, highlights, reflections, and realistic depth cues. The 2D artwork increasingly resembles a real three-dimensional scene.
+Phase 4 — Final Reveal (7.5–10.0 seconds): He makes the final detail, stands and steps safely to the side, revealing the complete illusion clearly. Hold the finished artwork long enough for viewers to understand the optical effect. Do not change the camera viewpoint.
+
+QUALITY CHECK BEFORE FINALIZING
+- Total duration is exactly 10 seconds and aspect ratio is 9:16.
+- One adult male artist only; outfit and appearance remain consistent.
+- The artist visibly creates the artwork step by step; no instant magical transformation.
+- The camera perspective supports the illusion and stays stable.
+- The final artwork is sharp, highly detailed, believable, and visually striking.
+- No unwanted text, logos, watermarks, or extra people.
+- Use clear, direct visual language. Avoid contradictory instructions.
+
+FIRST RESPONSE FORMAT
+Give exactly 10 numbered idea titles, each followed by one concise sentence describing the visual illusion. Do not include video prompts yet. End by asking: “Which idea number should I turn into a complete 10-second Google Veo 3 prompt?”
+
+IDEA INSPIRATION — DO NOT REUSE THESE EVERY TIME
+Examples of possible concepts: a giant eagle emerging from pavement, an endless waterfall, a molten-lava abyss, a giant whale beneath a street, an enchanted forest portal, a broken bridge illusion, a frozen lake crack, an infinite neon tunnel, a giant octopus, or an impossible floating staircase. Treat these only as inspiration; create new ideas whenever possible.</textarea>
+  </section>
+  <footer>Made for mobile-first creators · Copy, paste, and customize responsibly.</footer>
+</main>
+<script>
+const promptBox = document.getElementById('promptText');
+const copyBtn = document.getElementById('copyBtn');
+const selectBtn = document.getElementById('selectBtn');
+const status = document.getElementById('status');
+copyBtn.addEventListener('click', async () => {
+  try {
+    await navigator.clipboard.writeText(promptBox.value);
+    status.textContent = 'Copied! এখন ChatGPT বা তোমার AI tool-এ paste করো।';
+  } catch (e) {
+    promptBox.focus(); promptBox.select();
+    status.textContent = 'Automatic copy unavailable—prompt text selected. Tap Copy from your device menu.';
+  }
+});
+selectBtn.addEventListener('click', () => {
+  promptBox.focus(); promptBox.select();
+  status.textContent = 'Prompt selected. এখন Copy চাপো।';
+});
+</script>
+</body>
+</html>
